@@ -84,11 +84,15 @@ public class Tela_Arrays extends javax.swing.JFrame {
 
     private void jBuListaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBuListaMouseClicked
         // TODO add your handling code here:
-        for(int i =0; i < array.size(); i++){
-            System.out.println("Nome: " + array.get(i));
-        }
-        JOptionPane.showMessageDialog(this, "Nome: "+array);
         
+        if(array.isEmpty()){
+            JOptionPane.showMessageDialog(this, "Não existe nomes cadastrado!!");
+        }else{
+            for(int i =0; i < array.size(); i++){
+                System.out.println("Nome: " + array.get(i));
+            }
+            JOptionPane.showMessageDialog(this, "Nome: "+array);
+        }
     }//GEN-LAST:event_jBuListaMouseClicked
 
     /**
